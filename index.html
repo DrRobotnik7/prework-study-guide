@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -14,9 +15,12 @@
     <main>
       <section class="card" id="html-section">
         <h2>HTML</h2>
-        <p>For the purposes of this section, brackets are to be replaced with angled brackets in VS Code</p>
-        <p>The words “element” and “tag” are commonly used interchangeably in the web development world, but it is important to know the difference. An element refers to the entire element from opening tag to closing tag, whereas a tag refers only to what appears inside the angle brackets.</p>
-        <p>Try to use semantic elements as much as possible. They do what they say i.e. header and img, which makes your HTML easier to read by other developers and the browser.</p>
+        <br />
+        <p class = "HTML">This website is a great HTML resource <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML</a></p>
+        <p class = "HTML">For the purposes of this section, brackets are to be replaced with angled brackets in VS Code</p>
+        <p class = "HTML">The words “element” and “tag” are commonly used interchangeably in the web development world, but it is important to know the difference. An element refers to the entire element from opening tag to closing tag, whereas a tag refers only to what appears inside the angle brackets.</p>
+        <p class = "HTML">Try to use semantic elements as much as possible. They do what they say i.e. header and img, which makes your HTML easier to read by other developers and the browser.</p>
+        <br />
         <ul>
           <li>The code starts with the (!DOCTYPE html) declaration, which tells the browser what document type it should expect when it is opened.</li>
           <li>The (html) opening tag represents the root, or start, of our HTML document. Inside the (html) tag is an attribute of lang="en", which tells the browser the language for the webpage</li>
@@ -35,14 +39,38 @@
    
       <section class="card" id="css-section">
         <h2>CSS</h2>
+        <br />
+        <h3>Adding external CSS style sheet to asset file</h3>
+        <br />
+        <ol>
+          <li>cd "inset repo name here" then cd assets: moving to the assets folder, obviously repo must have that folder first</li>
+          <li>touch style.css: adds file to asset file</li>
+          <li>git status: make sure you are in the main branch, if not then navigate there with git checkout main</li>
+          <li>git checkout -b feature/add-css: adds a new branch to work on</li>
+          <li>In VSCode navigate to new style.css file in assets folder</li>
+          <li>Copy and paste whatever rules you want in your style sheet</li>
+          <li>The * selector applies to ALL elements on the page</li>
+          <li>Where possible use multiple selectors in one rule instead of having same rule multiple times - see DRY rule (do not repeat yourself). This reduces the number of lines of code.</li>
+          <li>Add the following in the head section, after the meta elements (link rel="stylesheet" href="./assets/style.css")</li>
+        </ol>
+        <br />
+        <h3>Useful information</h3>
+        <br />
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>This website is a great CSS resource <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN CSS</a></li>
+          <li>Assigning colors in CSS can be done in many ways, including by semantic references such as gray or blue. We can also refer to a color by its hexadecimal code, or hex #</li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li>Use class selectors to apply rules to all members of a class e.g. (p class="footer") in HTML then a .footer selector in style.css sheet</li>
+
         </ul>
       </section>
    
       <section class="card" id="git-section">
         <h2>Git</h2>
+        <br />
         <h3>Common commands</h3>
+        <br />
         <ul>
           <li>git clone "paste copied SSH value here": clone repository to local environment</li>
           <li>git status: checks what branch we are currently on</li>
@@ -53,16 +81,18 @@
           <li>git push origin "enter name of branch you are working on here": moves changes to the cloud, it will now appear in GitHub</li>
           <li>git checkout "enter name of branch here": moves to the branch you want to work on</li>
         </ul>
+        <br />
         <h3>GitHub Workflow</h3>
+        <br />
         <h4>First, make repo on GitHub website. Now, set up local environment:</h4>
         <ol>
-          <li>Now set up local environment</li>
           <li>git clone "paste copied SSH value"</li>
           <li>git status</li>
           <li>git checkout -b branch-name: make a new branch</li>
           <li>git status: check you are working in the new branch</li>
           <li>git pull origin main</li>
         </ol>
+        <br />
         <h4>Now make changes to your new branch:</h4>
         <ol>
           <li>git add -A</li>
@@ -70,6 +100,7 @@
           <li>git pull origin main: again, sync the local main with the cloud main branch</li>
           <li>git push origin "enter name of branch you are working on here": moves changes to the cloud, it will now appear in GitHub</li>
         </ol>
+        <br />
         <h4>Now do a pull request at GitHub to merge your changes from the new branch into the main branch in the cloud:</h4>
         <ol>
           <li>Once merged delete the branch you were working on as it has now merged into the main branch</li>
@@ -81,14 +112,16 @@
    
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
+        <br />
         <ul>
           <li>Enter your JavaScript notes here</li>
         </ul>
+        <br />
       </section>
     </main>
 
     <footer>
-      <p>I can code!</p>
+      <p class="footer">I can code!</p>
     </footer>
   </body>
 </html>
