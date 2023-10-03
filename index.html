@@ -42,6 +42,7 @@
    
       <section class="card" id="git-section">
         <h2>Git</h2>
+        <h3>Common commands</h3>
         <ul>
           <li>git clone "paste copied SSH value here": clone repository to local environment</li>
           <li>git status: checks what branch we are currently on</li>
@@ -52,6 +53,30 @@
           <li>git push origin "enter name of branch you are working on here": moves changes to the cloud, it will now appear in GitHub</li>
           <li>git checkout "enter name of branch here": moves to the branch you want to work on</li>
         </ul>
+        <h3>GitHub Workflow</h3>
+        <h4>First, make repo on GitHub website. Now, set up local environment:</h4>
+        <ol>
+          <li>Now set up local environment</li>
+          <li>git clone "paste copied SSH value"</li>
+          <li>git status</li>
+          <li>git checkout -b branch-name: make a new branch</li>
+          <li>git status: check you are working in the new branch</li>
+          <li>git pull origin main</li>
+        </ol>
+        <h4>Now make changes to your new branch:</h4>
+        <ol>
+          <li>git add -A</li>
+          <li>git commit -m "insert description of what you are adding here"</li>
+          <li>git pull origin main: again, sync the local main with the cloud main branch</li>
+          <li>git push origin "enter name of branch you are working on here": moves changes to the cloud, it will now appear in GitHub</li>
+        </ol>
+        <h4>Now do a pull request at GitHub to merge your changes from the new branch into the main branch in the cloud:</h4>
+        <ol>
+          <li>Once merged delete the branch you were working on as it has now merged into the main branch</li>
+          <li>Finally we need to sync our local environment back with the cloud so need to pull down the main branch. Go to the command prompt:</li>
+          <li>git checkout main - moves to the main branch</li>
+          <li>git pull origin main - syncs local copy with the updated branch on GitHub</li>
+        </ol>
       </section>
    
       <section class="card" id="javascript-section">
