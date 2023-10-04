@@ -11,6 +11,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -43,7 +44,7 @@
         <h3>Adding external CSS style sheet to asset file</h3>
         <br />
         <ol>
-          <li>cd "inset repo name here" then cd assets: moving to the assets folder, obviously repo must have that folder first</li>
+          <li>cd "insert repo name here" then cd assets: moving to the assets folder, obviously repo must have that folder first</li>
           <li>touch style.css: adds file to asset file</li>
           <li>git status: make sure you are in the main branch, if not then navigate there with git checkout main</li>
           <li>git checkout -b feature/add-css: adds a new branch to work on</li>
@@ -113,15 +114,33 @@
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <br />
+        <h3>Adding external JS sheet to asset file</h3>
+        <br />
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>Create script.js in assets file, same process as adding CSS file</li>
+          <li>In index.html, at the bottom under (footer) but above (body) add code (script src="./assets/script.js")(/script)</li>
+          <li>It goes at the bottom as it affects the HTML code, the browser reads code from top to bottom. So for JS to affect the HTML code, HTML needs to load first</li>
         </ul>
         <br />
+        <h3>Useful information</h3>
+        <br />
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">MDN JS Basics</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">MDN JS Data Structures</a></li>
+          <li>A value is considered falsy if it is one of the following values: 0, -0, On, "", null, undefined, NaN, or a Boolean data type with the value of false. All other values, including a Boolean with the value of true, are considered truthy.</li>
+          <li>The strict equality operator (===) checks to see if two values are equal, and returns a Boolean result true if the values are equal and false if the values are not equal.</li>
+          <li>String i.e. letters need to be in quotation marks. Numbers and Boolean true/false values don't need to be.</li>
+          <li>In JS and many other programming languages, arrays are zero-indexed and sequential. The first item has an index of 0, not 1. The indices, or location identifiers, will always be whole numbers that increase by 1 each time.</li>
+          <li>As per the above, the below code will result in triangle because it has an index of 0. Square is 1, pentagon is 2 etc.
+            <br />var shapes = ["triangle", "square", "pentagon", "circle"];
+            <br />console.log(shapes[0]);</li>
+            <br />
       </section>
     </main>
 
     <footer>
       <p class="footer">I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
